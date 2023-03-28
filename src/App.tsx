@@ -1,26 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import NavBar from '../src/components/Navbar'
+import Footer from '../src/components/Footer'
+import MainPage from './pages/MainPage';
+import SzakmaiTap from './pages/SzakmaiTap';
+import Idopont from './pages/Idopont';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface State{
+
 }
 
-export default App;
+
+export default class App extends Component<{}, State>{
+
+
+  render() {
+    
+    return <div>
+      <NavBar></NavBar>
+      
+      <Routes>
+        <Route path='/' element={<MainPage/>}></Route>
+        <Route path='/tapasztalat' element={<SzakmaiTap/>}></Route>
+        <Route path='/idopont' element={<Idopont/>}></Route>
+      </Routes>
+      <Footer></Footer>
+
+
+    </div>
+  }
+}
+

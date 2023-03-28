@@ -1,38 +1,57 @@
-.App {
+body{
+
+  background-color: rgb(46, 46, 46);
+  color: aliceblue;
+  
+}
+
+a{
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+
+}
+
+header{
+margin-bottom: 10px;
+
+}
+
+header, footer{
+
+  background-color: rgb(44, 54, 71);
   text-align: center;
+  border: 2px solid rgb(66, 80, 106);
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer{
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MainP{
+text-align: center;
+
+
+}
+.MainP img{
+
+width: 700px;
+height: 350px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.SzakmaiP img{
 
-.App-link {
-  color: #61dafb;
+  width: 500px;
+  height: 400px;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+  text-align: center;
+  background-color: rgb(70, 80, 96) ;
 }
